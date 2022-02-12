@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupDriverActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/fill_your_details"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_name"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_name"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_age"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:id="@+id/signup_driver_age"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/truck_number"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_tnum"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_mobile_number"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:id="@+id/signup_driver_pno"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/truck_capacity"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="numberDecimal"
+                android:id="@+id/signup_driver_tcap"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/transporter_name"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_tname"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/driving_experience"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:id="@+id/signup_driver_exp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_interested_routes"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/route_1"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_city"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r1fcity"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_state"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r1fstate"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_city"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r1tcity"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_state"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r1tstate"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/route_2"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_city"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r2fcity"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_state"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r2fstate"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_city"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r2tcity"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_state"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r2tstate"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/route_3"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_city"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r3fcity"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_state"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r3fstate"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_city"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r3tcity"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_state"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_r3tstate"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/signup_driver_email"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/create_password"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:id="@+id/signup_driver_passw"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/submit"
+            android:id="@+id/signup_driver_submit"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/go_back"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/signup_driver_back"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

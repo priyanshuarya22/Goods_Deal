@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDealer"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/edit_details"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nature_of_material"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/edit_dealer_material"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight_of_material"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="numberDecimal"
+                android:id="@+id/edit_dealer_weight"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_city"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/edit_dealer_city"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_state"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/edit_dealer_state"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/submit"
+            android:id="@+id/edit_dealer_submit"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/go_back"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/edit_dealer_back"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
